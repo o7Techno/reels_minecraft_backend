@@ -1,0 +1,4 @@
+__pycache__/
+storage/
+tmp/
+test_main.http
