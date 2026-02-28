@@ -114,9 +114,7 @@ def extract_audio(src: Path, dst: Path):
 def download_video(url: str, output: Path):
     cmd = [
         "yt-dlp",
-        "--js-runtimes", "node",
         "--remote-components", "ejs:github",
-        "--cookies", "cookies.txt",
         "-f", "bestvideo+bestaudio/best",
         "--merge-output-format", "mp4",
         "--no-playlist",
